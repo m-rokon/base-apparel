@@ -7,6 +7,9 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 
@@ -25,8 +28,8 @@
   </style>
 </head>
 
-<body>
-
+<body class="font-['Josefin_Sans']">
+  <!--
   We're coming soon
 
   Hello fellow shoppers! We're currently building our new fashion store.
@@ -34,12 +37,54 @@
 
   Email Address
 
-  <footer>
+  red: #CE9797
+  soft red: #F96262
+
+-->
+
+  <main class="h-screen  text-[hsl(0,36%,70%)] text-base">
+    <div class="flex flex-col w-full h-auto mx-auto md:h-screen md:flex-row">
+      <!-- left content -->
+      <div class="bg-[url('./images/bg-pattern-desktop.svg')] bg-cover bg-no-repeat bg-bottom md:w-3/5 w-full">
+        <div class="md:w-[500px] mx-auto">
+          <div class="p-8 bg-gradient-[135deg] from-[hsl(0,0%,100%)] to-[hsl(0,100%,98%)] md:bg-transparent logo">
+            <img src="./images/logo.svg" alt="logo">
+          </div>
+          <img class="object-cover w-full h-full md:hidden" src="./images/hero-mobile.jpg" alt="hero mobile">
+          <div class="md:p-10 px-5 py-14 w-[350px] mx-auto md:w-full text-center md:text-left">
+            <h1 class="text-5xl md:text-[84px] tracking-widest font-semibold leading-[1.15] uppercase"><span
+                class="font-light">We're</span><br /><span class="text-[hsl(0,6%,24%)] ">coming<br />soon</span></h1>
+            <p class="mt-7">Hello fellow shoppers! We're currently building our new fashion store.
+              Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            <form class="mt-7 email_form">
+              <div class="relative flex items-center justify-center w-full">
+                <div class="w-full input">
+                  <input type="email" placeholder="Email Address"
+                    class="relative py-5 pl-6 pr-8 placeholder:text-[hsl(0,36%,70%)]/60 w-full border-2 border-[hsl(0,80%,86%)]/60 focus:border-green-500 outline-none rounded-full email text-[hsl(0,36%,70%)]/60">
+                  <img src="./images/icon-error.svg" alt="error icon"
+                    class="absolute top-1/2 bottom-1/2 -translate-y-1/2 right-[100px]">
+                </div>
+                <button
+                  class="z-10 -ml-[86px] submit_btn py-6 px-10 hover:shadow-xl hover:shadow-[hsl(0,80%,86%)] cursor-pointer rounded-full bg-gradient-to-tr from-[hsl(0,80%,86%)] to-[hsl(0,74%,74%)]"
+                  type="submit"><img src="./images/icon-arrow.svg" alt="right arrow"></button>
+              </div>
+              <!-- message -->
+              <p class="success_err_msg"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- right content -->
+      <img class="hidden object-cover h-full md:block md:w-2/5" src="./images/hero-desktop.jpg" alt="hero desktop">
+    </div>
+  </main>
+
+  <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a target="_blank" href="https://rokon.dev">Rokon</a>.
     </p>
-  </footer>
+  </footer> -->
 </body>
 
 </html>
