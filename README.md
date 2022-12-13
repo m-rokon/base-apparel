@@ -39,8 +39,8 @@ This the finished product screenshot you're seeing above. Any feedback would be 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Check out my solution here](https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-7IfFLGLldp)
+- Live Site URL: [Check out the live site here](https://m-rokon.github.io/base-apparel/)
 
 ## My process
 
